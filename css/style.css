@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color:aliceblue;
+    font-family: 'Yantramanav', sans-serif;
+    position: relative;
+    min-height: 90vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-hero {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.650), rgba(0, 0, 0, 0.650))
+    ,url("../img/hero-wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+}
+
+
+.main-nav {
+    height: 50px;
+}
+
+.toggle-menu {
+    position: absolute;
+    top: 0.5em;
+    right: 1.5em;
+    cursor: pointer;
+    filter: invert(1);
+    width: 35px;
+    z-index: 1;
+}
+
+.main-menu {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    transition: transform 0.3s;
+    transform: translateY(-100%);
+    z-index: 1;
+}
+
+.main-menu-show {
+    transform: translateY(0);
+}
+
+.main-menu_logo {
+    position: absolute;
+    top: 0.5em;
+    left: 1.5em;
+    width: 35px;
+    filter: invert(1);
+    z-index: 1;
+    
+}
+
+.main-menu_item {
+    padding: 1em;
+}
+
+.main-menu_link {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-menu_link:hover {
+    border-bottom: 1px solid white;
+}
+
+.main-hero_content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 200px 0;
+    
+}
+
+.main-hero_title {
+    margin: 0;
+    color: white;
+    font-size: 4em;
+}    
+
+.main-hero_buttons {
+    flex-direction: row;
+}
+
+.main-hero_link {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 30px;
+}
+
+.main-hero_link:hover {
+    color: white;
+    background-color: black;
+}
+
+.quienes-somos {
+    min-height: 90vh;
+}
+
+.quienes-somos_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.quienes-somos_title {
+    font-size: 2.7em;
+    margin-bottom: 50px;
+}
+
+.quienes-somos_image {
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.quienes-somos_text {
+    width: 70%;
+    height: 150px;
+    overflow: hidden;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+
+.quienes-somos_button {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 0.5em;
+    border-radius: 30px;
+}
+
+.nuestro-objetivo {
+    min-height: 90vh;
+    background-color: black;
+}
+
+.nuestro-objetivo_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.nuestro-objetivo_title {
+    font-size: 2.7em;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.nuestro-objetivo_image {
+    width: 35%;
+    filter: invert(1);
+    margin-bottom: 50px;
+}
+
+.nuestro-objetivo_text {
+    color: white;
+    width: 70%;
+    height: 150px;
+    overflow: hidden;
+    font-size: 1.2em;
+    margin: 30px;
+}
+
+.nuestro-objetivo_button {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 30px;
+}
+
+.ubicacion {
+    min-height: 90vh;
+}
+
+.ubicacion_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ubicacion_title {
+    font-size: 2.4em;
+    margin-bottom: 50px;
+}
+
+.ubicacion_image {
+    width: 35%;
+    margin-bottom: 50px;
+}
+
+.ubicacion iframe {
+    width: 60%;
+}
+
+.main-footer {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    bottom: 0;
+}
+
+.main-footer_text {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+@media screen and (min-width: 760px) {
+    .toggle-menu{
+        display: none;
+    }
+    
+    .main-menu {
+        background-color: #ffffff00;
+        flex-direction: row;
+        justify-content: flex-end;
+        transform: translateY(0);
+    }
+
+    .main-hero_content {
+        align-items: flex-start;
+        padding: 200px 2em;
+    }
+
+    .main-hero_title {
+        font-size: 6em;
+    }
+
+    .quienes-somos_title {
+        font-size: 4em;
+    }
+
+    .quienes-somos_image {
+        width: 200px;
+    }
+
+    .nuestro-objetivo_title {
+        font-size: 4em;
+    }
+
+    .nuestro-objetivo_image {
+        width: 200px;
+    }
+
+    .ubicacion_title {
+        font-size: 4em;
+    }
+
+    .ubicacion_image {
+        width: 200px;
+    }
+
+    .ubicacion_content {
+        padding: 50px 0;
+    }
+
+    .ubicacion iframe {
+        width: 400px;
+    }
+
+}
